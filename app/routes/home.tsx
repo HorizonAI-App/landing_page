@@ -1,13 +1,19 @@
 import type { Route } from "./+types/home";
-import { Welcome } from "../welcome/welcome";
+import { Navigation } from "../components/Navigation";
+import { HeroSection } from "../components/HeroSection";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
+    { title: "HORIZON.AI - The AI Tactician for Onchain Trading" },
+    { name: "description", content: "Horizon eliminates manual execution and constant monitoring, allowing users to manage complex, time-sensitive transactions and execute optimal trading strategies autonomously." },
   ];
 }
 
 export default function Home() {
-  return <Welcome />;
+  return (
+    <div className="min-h-screen">
+      <Navigation />
+      <HeroSection />
+    </div>
+  );
 }
