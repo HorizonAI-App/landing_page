@@ -64,7 +64,7 @@ export function Footer() {
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors duration-300 text-sm font-medium"
               >
-                Built by mankind
+                Built by mankind & demilade
               </a>
             </div>
           </div>
